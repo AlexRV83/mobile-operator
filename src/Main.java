@@ -1,17 +1,14 @@
 public class Main<bonus> {
     public static void main(String[] args) {
-        int account = 325;
-        int refill = 999;
-        int bonus = refill / 100;
+        int account = 17;
+        int refill = 1000;
+        int bonus = 0;
         int total;
 
-
         if (refill > 1000) {
-            total = account + refill + bonus;
-        } else {
-            total = account + refill;
-            bonus = 0;
+            bonus = refill / 100;
         }
+        total = account + refill + bonus;
         System.out.println(total);
         System.out.println(bonus);
     }
